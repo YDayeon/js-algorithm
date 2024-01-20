@@ -7,8 +7,7 @@ function fibonacci(n) {
     const secondPreviousNum = result[result.length - 1];
     result.push(firstPreviousNum + secondPreviousNum);
   }
-  console.log(result);
   return result;
 }
 
-fibonacci(7);
+console.log(fibonacci(7));
