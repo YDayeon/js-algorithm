@@ -1,3 +1,4 @@
+// Big-O loop - O(n) : linear time complexity
 function fibonacci(n) {
   const resultLength = n - 2;
   let result = [0, 1];
@@ -10,4 +11,4 @@ function fibonacci(n) {
   return result;
 }
 
-console.log(fibonacci(7));
+console.logfibonacci(7);
