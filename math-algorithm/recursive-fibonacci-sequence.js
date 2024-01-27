@@ -1,16 +1,7 @@
-// Big-O - O(n)
+// Big-O - O(2^n) - bad performance = not good for fibonacci sequence
 function recursiveFibonacci(n) {
-  const fibonacciList = [0, 1];
-  if (n < 2) return fibonacciList[n];
-  let result = 1;
-
-  for (let i = 0; i < n - 1; i++) {
-    const prevValue = fibonacciList.length - 2;
-    result = fibonacciList[prevValue] + result;
-    fibonacciList.push(result);
-  }
-
-  return fibonacciList[fibonacciList.length - 1];
+  if (n < 2) return n;
+  return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
 }
 
 console.log(recursiveFibonacci(0));
