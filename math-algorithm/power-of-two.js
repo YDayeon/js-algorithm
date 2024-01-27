@@ -1,6 +1,7 @@
-// Big-O loop - O(n) : linear time complexity
+// Big-O - O(1)
 const isPowerOfTwo = (number) => {
   if (number === 1) return true;
+
   if (number % 2 === 1) return false;
 
   return true;
