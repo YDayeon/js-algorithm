@@ -1,5 +1,5 @@
 // Big-O = O(n)
-function factorial(num) {
+function factorial(num: number) {
   let result = 1;
 
   if (num === 0 || num === 1) return result;
